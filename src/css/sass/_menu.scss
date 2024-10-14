@@ -8,7 +8,9 @@ header{
     background-color: rgba(9,6,15,0.4);
     backdrop-filter: blur(6px);
     position: fixed;
-    z-index: 999;
+}
+#root{
+    padding-top: 1px;
 }
 nav{
     display: flex;

@@ -24,6 +24,7 @@
     }
 }
 
+
 .icon-l{
     max-width: 120px;
     transition: .5s ease;
@@ -40,4 +41,17 @@
     @include responsive(s){
         max-width: 144px;
     }
+}
+
+
+.ilustation{
+
+    max-width: 256px;
+    transition: .5s ease;
+   
+    @include responsive(s){
+        max-height: 144px;
+    }
+
+
 }
