@@ -400,6 +400,13 @@
   align-items: center;
 }
 
+.flex-center-column {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
 .flex-spacebetween {
   display: flex;
   justify-content: space-between;
@@ -1671,10 +1678,8 @@ header {
   -webkit-backdrop-filter: blur(6px);
           backdrop-filter: blur(6px);
   position: fixed;
-}
-
-#root {
-  padding-top: 1px;
+  top: 0;
+  z-index: 999;
 }
 
 nav {
@@ -2042,6 +2047,13 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.flex-center-column {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .flex-spacebetween {

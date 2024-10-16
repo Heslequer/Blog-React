@@ -1,20 +1,21 @@
 import logo from '../../svg/Blog-logo.svg';
+import { Link } from "react-router-dom";
 const Header = () =>{
     return(
         <>
             <header className="px-2 py-1">
                 <nav>
                     <div >
-                        <a href="" >
+                        <Link to={"/"} href="" >
                             <img src={logo} alt="" className="logo"/>
-                        </a>
+                        </Link>
                     </div>
                     <ul className="menu">
                         <li>
-                            <a href="">Sobre</a>
+                            <Link to={"/about"} href="">Sobre</Link>
                         </li>
                         <li>
-                            <a href="">Contato</a>
+                            <Link to={"/contact"} href="">Contato</Link>
                         </li>
                     </ul>
                 </nav>
@@ -30,7 +31,7 @@ const Header = () =>{
                     </div>
                     
                     <div className="cta-desktop ml-3">
-                        <a href="" className="btn">Login</a>
+                        <Link to={"/login"} href="" className="btn">Login</Link>
                     </div>
                     <div className="cta-mobile">
                         <a href="" className="link  color-primary">Login</a>
@@ -41,8 +42,12 @@ const Header = () =>{
             <div className="relative">
                 <div className="menu-mobile">
                     <ul className="nav-mobile">
-                        <li><a href="#" className="link-menu-mobile">Sobre</a></li>
-                        <li><a href="#" className="link-menu-mobile">Contato</a></li>
+                        <li>
+                            <Link to={"/about"} href="">Sobre</Link>
+                        </li>
+                        <li>
+                            <Link to={"/about"} href="">Sobre</Link>
+                        </li>
                         <li>
                             <form className="flex py-2 px-2">
                                 <input type="text" name="search" placeholder="Buscar..."/>

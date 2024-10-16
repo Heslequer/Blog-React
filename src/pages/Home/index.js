@@ -1,6 +1,9 @@
 //Figuras
 import { useEffect, useState } from 'react';
 import starIcon from '../../svg/icon-star.svg';
+import Header from "pages/Header";
+import Footer from "pages/Footer";
+import { Link } from "react-router-dom";
 
 //components
 
@@ -32,8 +35,8 @@ const Home = () =>{
             console.log('Erro na requisição dos posts mais votados');
         });
 
-        //Posts mais recentes na ordem decrescente, limite de 1
-        api.get('/posts?sort=date&_order=desc&_limit=1')
+        //Posts mais recentes na ordem decrescente, limite de 3
+        api.get('/posts?sort=date&_order=desc&_limit=3')
         .then((r)=>{
             setMostseen(r.data);
         })
@@ -42,7 +45,7 @@ const Home = () =>{
         });
 
         //Limite de 3 posts
-        api.get('/posts?_limit=3')
+        api.get('/posts?id=8    ')
         .then((r)=>{
             setBanner(r.data);
         })
@@ -54,6 +57,9 @@ const Home = () =>{
 
     return(
         <>
+
+            <Header></Header>
+
             <Hero></Hero>
 
             <section className="container">
@@ -80,19 +86,27 @@ const Home = () =>{
 
 
             <section className="container">
-                <h3>Post com mais visistas</h3>
+                <h3>Post com mais visitas</h3>
                 <p>
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique, fugit! Quas maiores impedit quae?
                 </p>
 
                 <div className="row">
-                    <Card></Card>
-                    <Card></Card>
-                    <Card></Card>
+                    {
+                        mostseen.map((item)=>{
+                            return <Card key={item.id}content={item}></Card>
+                        })
+                    }
                 </div>
             </section>
 
-            <Banner></Banner>
+            {
+                banner.map((item)=>{
+                    return <Banner key={item.id}content={item}></Banner>
+                })
+            }
+
+        <Footer></Footer>
 
         </>
     ); 

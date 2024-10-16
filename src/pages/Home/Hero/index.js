@@ -1,4 +1,5 @@
 import logoBlogGrande from '../../../svg/blog.svg';
+import { Link } from "react-router-dom";
 
 const Hero = () =>{
     return(
@@ -8,7 +9,7 @@ const Hero = () =>{
                     <div className="mobileTitulo">
                         <h1 className="h0">blog<span>.</span></h1>
                         <p className="mt-1">Um blog para todos. Escrever. Ler. Comentar. Contribuir. Aprender. Conectar</p>
-                        <a href="#" className="btn mt-4">Começar a escrever</a>
+                        <Link to={"/login"} href="#" className="btn mt-4">Começar a escrever</Link>
                     </div>
                 </div>
                 <div className="grid-6 logoblog">
