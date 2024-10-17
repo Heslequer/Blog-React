@@ -12,7 +12,7 @@ const Footer = () =>{
                     <img src={logo} className='icon-l' alt=""/>
                 </div>
 
-                <div className="row pb-3">
+                <div className="row">
                     <div className="mobile-footer">
                         <div className="grid-3">
                             <h4>Posts</h4>
@@ -35,13 +35,13 @@ const Footer = () =>{
                         </div>
                     </div>
 
-                    <div className="grid-6">
+                    <div className="grid-6 ">
                         <h4 className="mb-2">Quer ser avisado dos novos posts do blog?</h4>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                             Ornare urna pharetra ut ac, pellentesque.
                         </p>
                         <div className="flex-start-row mt2">
-                            <input type="text" name="search" id="" placeholder="Digite seu e-mail aqui"/>
+                            <input type="text" name="search" className='mt-2' id="" placeholder="Digite seu e-mail aqui"/>
                             <button className="btn ml-2">Cadastrar</button>
                         </div>
                     </div>

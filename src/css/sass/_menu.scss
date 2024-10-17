@@ -49,28 +49,27 @@ nav{
 .menu-mobile{
     width: 100%;
     height: 100vh;
-    margin-top: 80px;
+    margin-top: 40px;
     position: absolute;
     top: 0;
     left: -100%;
     background-color: rgba(6,9,15,0.4);
     backdrop-filter: blur(12px);    
     transition: .7s ease;
+    z-index: 999;
 
     li{
-        border-bottom: 1px solid $black-light;
-        
-        .link-menu-mobile{
-            display: inline-block;
-            width: 100%;
-            height: 100%;
-            padding: 24px 16px;
+        border-bottom: 1px solid $black-light;  
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        padding: 24px 16px;
 
-            &:hover{
-                background-color: $black-light;
-                padding-left: 24px;
-            }
+        &:hover{
+            background-color: $black-light;
+            padding-left: 24px;
         }
+        
     }
 }
 

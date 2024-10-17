@@ -5,9 +5,8 @@ const Login = () => {
     return(
         <>
             <Header></Header>
-
-
-            <section className="container">
+            
+                <section className="container">
                 <div className="row">
                     <div className="grid-4 dissapear"></div>
 

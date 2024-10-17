@@ -62,7 +62,7 @@ const Home = () =>{
 
             <Hero></Hero>
 
-            <section className="container">
+            <section className="container card">
                 <div className="row">
                     <div className="grid-5">
                         <img src={starIcon} className="icon-l" alt=""/>
@@ -86,12 +86,13 @@ const Home = () =>{
 
 
             <section className="container">
-                <h3>Post com mais visitas</h3>
-                <p>
+                <h3 className="pl-1">Post com mais visitas</h3>
+                <p className="pl-1 mb-2">
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique, fugit! Quas maiores impedit quae?
                 </p>
 
-                <div className="row">
+                <div className="row stretch ">
+
                     {
                         mostseen.map((item)=>{
                             return <Card key={item.id}content={item}></Card>

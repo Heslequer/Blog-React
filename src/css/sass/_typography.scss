@@ -122,25 +122,29 @@
 
     // P1
     @if $size == p1 and $device == desktop{
-        font-size: 18px;
+        font-size: 24px;
         line-height: 30px;
         font-weight: 300;
     }@else if $size == p1 and $device == mobile{
-        font-size: 18px;
+        font-size: 22px;
         line-height: 30px;
         font-weight: 300;
     }@else if $size == p1 and $device == smallmobile{
-        font-size: 14px;
+        font-size: 20px;
         line-height: 24px;
         font-weight: 300;
     }
 
     // P2
     @if $size == p2 and $device == desktop{
-        font-size: 18px;
+        font-size: 20px;
         line-height: 30px;
         font-weight: 200;
     }@else if $size == p2 and $device == mobile{
+        font-size: 18px;
+        line-height: 26px;
+        font-weight: 200;
+    }@else if $size == p2 and $device == smallmobile{
         font-size: 16px;
         line-height: 26px;
         font-weight: 200;
@@ -152,7 +156,7 @@
         line-height: 26px;
         font-weight: 200;
     }@else if $size == p3 and $device == mobile{
-        font-size: 16px;
+        font-size: 14px;
         line-height: 26px;
         font-weight: 200;
     }@else if $size == p3 and $device == smallmobile{
@@ -163,22 +167,22 @@
 
     // P4
     @if $size == p4 and $device == desktop{
-        font-size: 16px;
+        font-size: 14px;
         line-height: 24px;
         font-weight: 200;
     }@else if $size == p4 and $device == mobile{
-        font-size: 14px;
+        font-size: 12px;
         line-height: 20px;
         font-weight: 200;
     }
 
     // P5
     @if $size == p5 and $device == desktop{
-        font-size: 13px;
+        font-size: 12px;
         line-height: 24px;
         font-weight: 200;
     }@else if $size == p5 and $device == mobile{
-        font-size: 13px;
+        font-size: 10px;
         line-height: 20px;
         font-weight: 200;
     } 

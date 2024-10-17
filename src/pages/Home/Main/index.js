@@ -29,7 +29,7 @@ const Main = ({content}) =>{
                     <h6 className="color-gray">{content.date}</h6>
                     <h6 className="uppercase color-primary">{content.category}</h6>
                     <Link to={"/post/"+ content.id} >
-                        <h4>{content.title}</h4>
+                        <h4 className="underline">{content.title}</h4>
                     </Link>
                     <p className="mt-1">{content.resume}</p>
                     

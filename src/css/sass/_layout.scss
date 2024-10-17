@@ -48,7 +48,23 @@ $container-xs: 340px;
 $container: 1440px;
 $gutter: 24px;
 
+#buscador{
 
+    margin-left: 128px !important;
+    margin-right: 128px !important; 
+    
+    padding-left: 128px;
+    padding-right: 128px;
+    
+    @include responsive(s)
+    {
+        margin-left: 8px !important;
+        margin-right: 8px !important; 
+        
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+}
 .container{
     max-width: $container;
     margin: 48px auto;
@@ -209,7 +225,9 @@ $gutter: 24px;
 .relative{
     position: relative;
 }
-
+.fixed{
+    position: fixed;
+}
 .flex-wrap{
     flex-wrap: wrap;
 }
@@ -340,20 +358,5 @@ $gutter: 24px;
 
     &:hover{
         background-color: rgba(21,27,38,0.3);
-    }
-}
-.img-banner{
-    width: 100%;
-    max-height: 420px;
-    border-radius: 4px;
-
-    img{
-        transition: .5s ease;
-    }
-
-    &:hover{
-        img{
-            transform: scale(1.02);
-        }
     }
 }
