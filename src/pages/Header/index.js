@@ -25,10 +25,10 @@ const Header = () =>{
     function clickLink(){
         document.querySelector('.bx').classList.toggle('active');
         document.querySelector('.menu-mobile').classList.toggle('showmenu');
-        if(!(document.querySelector('.menu-mobile').classList.contains('showmenu')))
+        /*if(!(document.querySelector('.menu-mobile').classList.contains('showmenu')))
             {
                 document.body.style.overflow = '';
-            
+            }*/
     }
 
 
@@ -36,12 +36,12 @@ const Header = () =>{
     function clickMenu(){
         document.querySelector('.bx').classList.toggle('active');
         document.querySelector('.menu-mobile').classList.toggle('showmenu');
-        if(document.querySelector('.bx').classList.contains('active'))
+        /*if(document.querySelector('.bx').classList.contains('active'))
             {
                 document.body.style.overflow = 'hidden';
             }else{
                 document.body.style.overflow = '';
-            }
+            }*/
     }
     document.querySelectorAll('.link-menu-mobile').forEach((item)=>{    
 

@@ -49,7 +49,7 @@ nav{
 .menu-mobile{
     width: 100%;
     height: 100vh;
-    margin-top: 40px;
+    margin-top: 80px;
     position: absolute;
     top: 0;
     left: -100%;
@@ -162,3 +162,17 @@ nav{
 
     } 
 }
+.menu-mobile.showmenu{
+    width: 100%;
+    height: 100vh;
+  
+    overflow: hidden;
+  
+    position: fixed;
+    top: 0;
+    left: 0;
+  
+    transition: .7s ease;
+  
+  }
+  
