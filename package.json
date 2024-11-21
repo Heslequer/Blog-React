@@ -1,5 +1,5 @@
 {
-  "homepage":"https://heslequer.github.io/Blog-React/",
+  "homepage":"https://heslequer.github.io/Blog-React",
   "name": "aulablog",
   "version": "0.1.0",
   "private": true,
@@ -15,7 +15,7 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "node server.js",
+    "start": "react-scripts start",
     "predeploy":"npm run build",
     "deploy":"gh-pages -d build",
     "build": "react-scripts build",
