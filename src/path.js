@@ -14,7 +14,7 @@ import ScrollToTop from './ScrollToTop';
 const Paths = () => {
     return(
         <>
-            <Router basename="Blog-React">
+            <Router>
                 {/*Switch*/}
                 <ScrollToTop />
                 <Routes>

@@ -91,7 +91,7 @@ const Home = () =>{
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique, fugit! Quas maiores impedit quae?
                 </p>
 
-                <div className="row stretch ">
+                <div className="row stretch flex" id="card-br">
 
                     {
                         mostseen.map((item)=>{

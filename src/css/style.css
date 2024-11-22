@@ -76,6 +76,12 @@
 }
 
 @media screen and (max-width: 960px) {
+  #card-br {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 960px) {
   .mobileTitulo {
     display: flex;
     flex-direction: column;
@@ -1727,6 +1733,12 @@ nav {
 }
 @media screen and (max-width: 960px) {
   #blog {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  #card-br {
     flex-direction: column;
   }
 }

@@ -84,6 +84,11 @@ $gutter: 24px;
         flex-direction: column;
     }
 }
+#card-br{
+    @include responsive(s){
+        flex-direction: column;
+    }
+}
 .mobileTitulo{
     @include responsive(s){
         display: flex;
